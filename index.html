@@ -11,20 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/overlays.css" />
+    <link rel="stylesheet" href="/styles//configuration.css">
+  
   </head>
 
   <body>
+    <div id="backdrop"></div>
     <header id="main-header">
       <h1>Play Tic, Tac, Toe</h1>
       <p>Build with HTML, CSS, JavaScript</p>
     </header>
     <main>
       <!-- good for extra information -->
-      <aside>
+      <aside class="modal" id="config-overlay">
         <h2>Choose your name</h2>
-        <form action="">
-          <div>
+
+        <form>
+          <div class="form-control">
             <!-- Connect label with input id(playername) -->
             <label for="playername">Player name</label>
             <input type="text" name="playername" id="playername" />
@@ -41,7 +46,7 @@
             <article>
               <h2>Player1</h2>
               <h3>PLAYER NAME</h3>
-              <p>X</p>
+              <p class="player-symbol">X</p>
               <button class="btn btn-alt">Edit</button>
             </article>
           </li>
@@ -49,7 +54,7 @@
             <article>
               <h2>Player2</h2>
               <h3>PLAYER NAME</h3>
-              <p>O</p>
+              <p class="player-symbol">O</p>
               <button class="btn btn-alt">Edit</button>
             </article>
           </li>
